@@ -93,6 +93,7 @@ namespace Bobskie_Backpropagation
             nn.run();
             textBox3.Text = "" + nn.getOuputData(0);
 
+
         }
     }
 }
