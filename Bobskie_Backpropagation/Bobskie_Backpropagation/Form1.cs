@@ -92,8 +92,16 @@ namespace Bobskie_Backpropagation
             
             nn.run();
             textBox3.Text = "" + nn.getOuputData(0);
+            label13.Text = "-->";
 
-
+            if(Math.Round(nn.getOuputData(0)) == 1){
+                label15.Text = "Most likely to have ";
+            }
+            else
+            {
+                label15.Text = "Less likely to have ";
+            }
+            label14.Text = "lung cancer.";
         }
     }
 }
